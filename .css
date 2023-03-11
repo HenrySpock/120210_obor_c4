@@ -1,0 +1,96 @@
+/* game board table */
+
+html {
+    background-color: rgb(125, 125, 219);
+  }
+
+td {
+    background-color: blue;
+    border-radius: 6px;
+  }
+
+/* td {
+    background-color: rgb(63, 63, 63);
+  } */
+
+#board td {
+    width: 50px;
+    height: 50px;
+    border: solid 1px #666;
+    position: relative;
+  }
+  
+  /* pieces are div within game table cells: draw as colored circles */
+  
+  /* .piece {
+    TWELFTH
+    TODO: make into circles
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+  }  */
+
+  .piece {
+    margin: 5px;
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: drop 0.5s linear forwards;
+  }
+
+  @keyframes drop {
+    from {
+      top: -500%; /* change to the initial position above the top row */
+    }
+    to {
+      top: 0;
+    }
+  }
+  
+  /* THIRTEENTH */
+  /* TODO: make pieces red/blue,  depending on player 1/2 piece */
+  .piece.p1 {
+    background-color: red;
+  }
+  
+  .piece.p2 {
+    background-color: yellow;
+  }
+  
+  /* column-top is table row of clickable areas for each column */
+  
+  #column-top td {
+    border: dashed 1px lightgray;
+  }
+  
+  #column-top td:hover {
+    background-color: rgb(255, 123, 0);
+  }
+  
+  #board {
+    margin: 0 auto;
+  }
+
+  #container {
+    text-align: center;
+  }
+
+  #start-btn {
+    text-align: center;
+  }
+
+  .circle {
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(125, 125, 219);
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  #player-form {
+    display: none;
+  }

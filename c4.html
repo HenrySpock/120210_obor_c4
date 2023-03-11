@@ -1,0 +1,38 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="c4.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+        <h1 id="title">CONNECT FOUR</h1>
+        <button id="start-btn">Start game?</button>
+        <div>
+            <form id="player-form">
+                <div>
+                    <label for="player1-name">Player 1 Name:</label>
+                    <input type="text" id="player1-name" name="player1-name" required>
+                    <label for="player1-color">Player 1 Color:</label>
+                    <input type="color" id="player1-color" name="player1-color">
+                </div>
+                <div>
+                    <label for="player2-name">Player 2 Name:</label>
+                    <input type="text" id="player2-name" name="player2-name" required>
+                    <label for="player2-color">Player 2 Color:</label>
+                    <input type="color" id="player2-color" name="player2-color">
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+        <div id="form-container"></div>
+      </div>
+
+<div id="game">
+  <table id="board"></table>
+</div>
+
+<script src="c4.js"></script>
+
+</body>
+</html>
